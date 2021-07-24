@@ -23,7 +23,7 @@ namespace InterviewQuestions.Solutions
             int lengthB = nums2.Length;
 
             // We want array A to be the smaller of the two, so switch them if required.
-            if (lengthB > lengthA)
+            if (lengthB < lengthA)
             {
                 return FindMedianSortedArrays(nums2, nums1);
             }

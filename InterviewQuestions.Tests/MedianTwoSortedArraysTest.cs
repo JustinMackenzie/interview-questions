@@ -43,5 +43,17 @@ namespace InterviewQuestions.Tests
 
             Assert.Equal(13.5, result);
         }
+
+        [Fact]
+        public void Test4()
+        {
+            int[] a = new int[] { };
+            int[] b = new int[] { 1 };
+
+            var solution = new MedianTwoSortedArrays();
+            var result = solution.FindMedianSortedArrays(a, b);
+
+            Assert.Equal(1, result);
+        }
     }
 }
